@@ -190,7 +190,6 @@ def preprocessing():
     return centers_df
 
 def clustering(centers_df):
-    #bandwidth = 5
     subjects = np.unique(centers_df[['subject_id']].values.tolist())
     print centers_df.shape
     for subject in subjects:
